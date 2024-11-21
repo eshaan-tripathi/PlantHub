@@ -1,20 +1,20 @@
 const jwt = require('jsonwebtoken');
 const userModel = require('../models/userModel');
 
-const requireSignIn = async(req,res,next)=>{
-    try{
-   const decode = await jwt.verify(req.headers.authorization, process.env.JWT_SECRET);
-   req.user = decode;
-   next();
+const requireSignIn = (req, res, next) => {
+    const token = req.headers.authorization;
+    if (!token) {
+      return res.status(401).json({ error: "Token missing" });
     }
-    catch(err){
-        res.status(500).send({
-            success: false,
-            message: 'Error in registeration',
-            err
-        })
+    try {
+      const decoded = jwt.verify(token, process.env.JWT_SECRET);
+      req.user = decoded;
+      next();
+    } catch (err) {
+      res.status(401).json({ error: "Invalid token" });
     }
-}
+  };
+  
 
 const isAdmin = async (req,res,next)=>{
     try{
