@@ -1,0 +1,154 @@
+/* =========================
+   General Styles
+========================= */
+body {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text for readability */
+  font-family: "Roboto", sans-serif;
+}
+
+.banner-img {
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+/* =========================
+   Home Page Styles
+========================= */
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.home-page h1 {
+  color: #f1c40f; /* Gold text */
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.home-page .card {
+  background-color: #1e1e1e; /* Dark card background */
+  width: 18rem;
+  border: 1px solid #333; /* Subtle border for structure */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 15px;
+}
+
+.home-page .card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8); /* Highlight hover */
+}
+
+.home-page .card-img-top {
+  height: 300px !important;
+  object-fit: cover;
+  filter: brightness(0.8); /* Dim image slightly */
+  transition: filter 0.3s;
+}
+
+.home-page .card-img-top:hover {
+  filter: brightness(1); /* Restore brightness on hover */
+}
+
+.home-page .card-body {
+  padding: 15px;
+}
+
+.home-page .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.home-page .card-price {
+  color: #27ae60; /* Emerald green */
+  font-weight: bold;
+}
+
+.home-page .card-text {
+  color: #b0b0b0; /* Muted gray for text */
+  font-size: 14px;
+}
+
+.home-page button {
+  background-color: #34495e; /* Navy blue */
+  color: #e0e0e0;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.home-page button:hover {
+  background-color: #e74c3c; /* Highlight red on hover */
+  color: #fff;
+}
+
+/* =========================
+   Filters Section
+========================= */
+.filters h4 {
+  margin-top: 100px;
+  color: #f1c40f;
+  border-bottom: 1px solid rgba(241, 196, 15, 0.5); /* Gold border */
+  padding-bottom: 5px;
+}
+
+.ant-checkbox-wrapper:first-of-type {
+  margin-left: 8px;
+}
+
+.ant-checkbox-wrapper {
+  margin: 2px;
+  color: #e0e0e0; /* Light text */
+}
+
+.ant-radio-wrapper {
+  margin-bottom: 5px !important;
+  margin-left: 10px;
+  color: #e0e0e0; /* Light text */
+}
+
+.filters button {
+  background-color: #e74c3c; /* Red button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.filters button:hover {
+  background-color: #c0392b; /* Darker red */
+  transform: scale(1.05); /* Slight grow effect */
+}
+
+/* =========================
+   Load More Button
+========================= */
+.loadmore {
+  background-color: #27ae60; /* Emerald green */
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px !important;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.loadmore:hover {
+  background-color: #2ecc71; /* Brighter green */
+  transform: scale(1.1); /* Slight grow effect */
+}

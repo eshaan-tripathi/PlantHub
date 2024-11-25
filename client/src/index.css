@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================
+   Refined Dark Theme Navbar
+======================== */
+/* ========================
+   Black Navbar with White Text
+======================== */
+.navbar {
+  font-family: "Host Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #000; /* Pure black background */
+  color: #fff; /* White text for contrast */
+  padding: 15px 20px; /* Adequate padding for better spacing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
+  border-bottom: 2px solid #fff; /* White underline */
+}
+
+.navbar-brand {
+  font-size: 22px; /* Slightly larger for emphasis */
+  font-weight: 700;
+  color: #fff; /* White branding */
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #27ae60; /* Emerald hover effect for brand */
+}
+
+.nav-link {
+  font-weight: 400;
+  margin-right: 20px;
+  color: #000; /* White text for better visibility */
+  transition: color 0.3s, border-bottom 0.3s;
+  text-decoration: none;
+}
+.dropdown-item:hover{
+  color:#27ae60;
+}
+
+.nav-link:hover {
+  color: #27ae60; /* Emerald hover effect */
+   /* Underline on hover */
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Add spacing between links */
+}
+
+/* =========================
+   Search Form in Navbar
+======================== */
+.search-form {
+  margin-left: auto; /* Push to the right */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-form input {
+  border: 1px solid #555; /* Border for better visibility */
+  border-radius: 5px;
+  background-color: #121212; /* Slightly off-black input */
+  color: #fff; /* White text */
+  padding: 7px 12px;
+  font-size: 14px;
+}
+
+.search-form input::placeholder {
+  color: #bbb; /* Muted placeholder */
+}
+
+.search-form button {
+  background-color: #27ae60; /* Emerald button */
+  color: #fff; /* White text */
+  border-radius: 5px;
+  padding: 7px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #2ecc71; /* Lighter green on hover */
+  cursor: pointer;
+}
+
+
+/* =========================
+   Footer Section
+======================== */
+.footer {
+  color: #e0e0e0;
+  padding: 25px;
+  background: linear-gradient(to right, #1e1e1e, #333); /* Dark gradient */
+}
+
+.footer a {
+  text-decoration: none;
+  color: #27ae60; /* Green links */
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #f1c40f; /* Gold hover effect */
+  border-bottom: 1px solid #f1c40f;
+}
+
+/* =========================
+   Page Not Found (PNF)
+======================== */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #e0e0e0; /* Light text */
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+  color: #e74c3c; /* Red for emphasis */
+}
+
+.pnf-heading {
+  font-weight: normal;
+  color: #b0b0b0; /* Muted gray for subtext */
+}
+
+.pnf-btn {
+  color: #fff;
+  background-color: #27ae60;
+  border: 1px solid #27ae60;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pnf-btn:hover {
+  background-color: #2ecc71;
+  color: #121212; /* Contrast hover */
+}
+
+/* =========================
+   Contact Us Section
+======================== */
+.contactus {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========================
+   Product Links
+======================== */
+.product-link {
+  text-decoration: none !important;
+  color: #27ae60 !important;
+}
+
+.product-link:hover {
+  color: #2ecc71 !important;
+}
+
+/* =========================
+   Category Button
+======================== */
+.cat-btn {
+  padding: 40px 0;
+  font-size: 24px;
+  text-transform: uppercase;
+  background-color: #333; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cat-btn:hover {
+  background-color: #434343; /* Slightly lighter on hover */
+  color: #27ae60; /* Emerald text on hover */
+}
+
+/* =========================
+   Dashboard Section
+======================== */
+.dashboard {
+  margin-top: 100px !important;
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* Light text */
+}
+
+.dashboard-menu h4 {
+  background-color: #27ae60 !important;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 5px;
+}
