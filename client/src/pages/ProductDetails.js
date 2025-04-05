@@ -68,11 +68,12 @@ const ProductDetails = () => {
       toast.error("Product details are invalid.");
       return;
     }
-
+    toast.success("Item Added to cart!");
     const updatedCart = [...cart, product];
     setCart(updatedCart); // Assuming you have a `cart` state
+    
     localStorage.setItem("cart", JSON.stringify(updatedCart));
-    toast.success("Item Added to cart!");
+    
   }}
 >
   ADD TO CART

@@ -8,6 +8,9 @@ import toast from "react-hot-toast";
 import Layout from "./../components/Layout/Layout";
 import { AiOutlineReload } from "react-icons/ai";
 import "../styles/Homepage.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -106,15 +109,45 @@ const HomePage = () => {
       console.log(error);
     }
   };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true, // Auto play for smooth rotation
+    autoplaySpeed: 3000, // Speed of the autoplay
+    arrows: true, // Add navigation arrows
+    pauseOnHover: true, // Pause autoplay when hovered
+  };
   return (
     <Layout title={"ALl Products - Best offers "}>
       {/* banner image */}
+      
+      <Slider {...settings} className="homepage-slider">
+    <div>
       <img
-        src="/images/banner.png"
-        className="banner-img"
-        alt="bannerimage"
-        width={"100%"}
+        src="/images/img1.jpg"
+        alt="Slider Image 1"
+        className="slider-image"
       />
+    </div>
+    <div>
+      <img
+        src="/images/plant1.jpg"
+        alt="Slider Image 2"
+        className="slider-image"
+      />
+    </div>
+    <div>
+      <img
+        src="/images/plant2.jpg"
+        alt="Slider Image 3"
+        className="slider-image"
+      />
+    </div>
+    
+  </Slider>
       {/* banner image */}
       <div className="container-fluid row mt-3 home-page">
         <div className="col-md-3 filters">
@@ -149,7 +182,7 @@ const HomePage = () => {
             </button>
           </div>
         </div>
-        <div className="col-md-9 ">
+        <div className="col-md-9 main">
           <h1 className="text-center text-b">All Products</h1>
           <div className="d-flex flex-wrap justify-content-center">
   {products?.map((p) => (

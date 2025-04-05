@@ -3,6 +3,8 @@
   margin-top: 80px !important;
 }
 .category .card {
+  display: flex;
+  justify-content: center;
   background-color: rgba(128, 128, 128, 0.097);
   width: 18rem;
 }
@@ -35,4 +37,21 @@
 
 .category .card-img-top {
   height: 300px !important;
+}
+
+.cat-cards{
+  display: flex;
+  justify-content:center;
+   text-align: center;
+   text-decoration: none;
+   color:black
+}
+.cat-cards h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  display: flex;
+  justify-content: center;
 }

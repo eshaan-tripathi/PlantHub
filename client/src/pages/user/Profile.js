@@ -66,7 +66,7 @@ const Profile = () => {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     className="form-control"
-                    id="exampleInputEmail1"
+                    id="exampleInputName"
                     placeholder="Enter Your Name"
                     autoFocus
                   />
@@ -76,7 +76,7 @@ const Profile = () => {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="form-control"
+                    className="form-control text-black"
                     id="exampleInputEmail1"
                     placeholder="Enter Your Email "
                     disabled
@@ -98,7 +98,7 @@ const Profile = () => {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     className="form-control"
-                    id="exampleInputEmail1"
+                    id="exampleInputPhone"
                     placeholder="Enter Your Phone"
                   />
                 </div>
@@ -108,7 +108,7 @@ const Profile = () => {
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
                     className="form-control"
-                    id="exampleInputEmail1"
+                    id="exampleInputAddress"
                     placeholder="Enter Your Address"
                   />
                 </div>
