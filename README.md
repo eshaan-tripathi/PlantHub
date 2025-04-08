@@ -20,7 +20,7 @@ An intelligent and interactive e-commerce web application for buying and selling
 
 ## 📁 Project Structure
 
-PlantHub/ │ ├── client/ # React Frontend │ ├── public/ │ └── src/ │ ├── components/ │ ├── pages/ │ └── App.js │ ├── server/ # Node.js + Express Backend │ ├── controllers/ │ ├── models/ │ ├── routes/ │ └── server.js │ ├── .env # Environment Variables ├── README.md └── package.json
+PlantHub/ │ ├── client/ # React Frontend │ ├── public/ │ └── src/ │ ├── components/ │ ├── pages/ │ └── App.js │ ├── backend/ # Node.js + Express Backend │ ├── controllers/ │ ├── models/ │ ├── routes/ │ └── server.js │ ├── .env # Environment Variables ├── README.md └── package.json
 
 bash
 Copy
